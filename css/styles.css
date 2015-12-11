@@ -1,7 +1,133 @@
 body {
-background: pink;
+background-image: url(../img/background.jpg);
 }
 
 img {
-width: 50%;
+width: 100%;
+padding-bottom: 35px;
+padding-top: 35px;
+}
+
+.homeimg {
+    width: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 100px;
+}
+
+
+li { 
+    list-style: none;
+    display: inline-block;
+    padding-right: 1em;    
+}
+
+nav {
+    text-align: center;
+    font-family: 'Julius Sans One', sans-serif;
+    color: #363431;
+    font-size: 3em;
+}
+
+h1 {
+    font-family: 'Julius Sans One', sans-serif;
+    color: floralwhite;
+    font-size: 8em;
+    text-align: center;
+
+}
+h2 {
+    font-family: 'Julius Sans One', sans-serif;
+    color: #363431;
+    font-size: 3em;
+    font-weight: 100;
+}
+
+h3{
+   font-family: 'Julius Sans One', sans-serif;
+    color: #363431;
+    font-size: 2em;
+
+}
+.nav {
+    background-color: #F0BB9F;
+}
+
+.titles {
+    background-color: #F0BB9F;
+    padding-bottom: 50px;
+    font-size: 9px;
+    font-weight: 100;
+}
+
+p {
+    font-family: 'Pontano Sans', sans-serif;
+    font-size: 17px;
+    text-align: justify;
+    padding-left: 2em;
+    padding-right: 2em;
+    
+}
+
+.grid-container {
+    background-color: floralwhite;
+}
+
+.head h1 {
+    color: #363431;
+}
+
+/*Gallery*/
+
+.thumbs ul li img{
+    width: 120%; 
+    height: 120%; 
+    padding-right: 1em; 
+    
+}
+
+.fullsize ul li {
+    display: inline-block; 
+    padding-right: 2em; 
+    padding-bottom: 2em; 
+    
+}
+
+.fullsize ul{
+    display: block;  
+    padding-left: 21em; 
+}
+
+.photo-title {
+    background-color: white; 
+    width: 100%; 
+    height: 4em; 
+    text-align:; 
+    font-size: 6em; 
+    padding-top: .5em; 
+    
+}
+
+/* link & visited */
+
+a:link,
+a:visited {
+  display: inline;
+  color: floralwhite;
+  height: 50px;
+  width: 150px;
+  text-align: center;
+  line-height: 32px;
+  margin-bottom: 1px;
+  text-decoration: none;
+  transition: background .5s, margin-left 1s;
+}
+
+/* Hover State */
+a:hover {
+  background: none;
+  color: #363431;
+  margin-left: 32px;
+  transition: background .5s, margin-left .5s;
 }
