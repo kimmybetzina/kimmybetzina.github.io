@@ -13,7 +13,7 @@ padding-top: 35px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 100px;
+    padding-bottom: 0px;
 }
 
 
@@ -56,7 +56,7 @@ h3{
 
 .titles {
     background-color: #F0BB9F;
-    padding-bottom: 50px;
+    padding-bottom: 300px;
     font-size: 9px;
     font-weight: 100;
 }
@@ -76,6 +76,13 @@ p {
 
 .head h1 {
     color: #363431;
+}
+
+.quote {
+    text-align: center;
+    padding: none;
+
+    
 }
 
 /*Gallery*/
@@ -101,7 +108,7 @@ p {
 
 .photo-title {
     background-color: white; 
-    width: 100%; 
+    width: 10%; 
     height: 4em; 
     text-align:; 
     font-size: 6em; 
@@ -114,7 +121,7 @@ p {
 a:link,
 a:visited {
   display: inline;
-  color: floralwhite;
+  color: #363431;
   height: 50px;
   width: 150px;
   text-align: center;
@@ -127,7 +134,74 @@ a:visited {
 /* Hover State */
 a:hover {
   background: none;
-  color: #363431;
+  color: floralwhite;
   margin-left: 32px;
   transition: background .5s, margin-left .5s;
+}
+
+/* Included CSS
+  * URL: http://tympanus.net/codrops/2011/12/26/css3-lightbox/ 
+*/
+
+/* Customize. Make It Your Own. */
+
+/* Thumbnails */
+.lb-album{
+  width: 100%;
+    
+
+}
+
+.lb-album li {
+	list-style: none;
+  margin: 75px;
+  position: relative;
+  
+}
+
+.lb-album li > a,
+.lb-album li > a img {
+	display: block;
+
+}
+
+/* Overlay */
+.lb-overlay{
+	background: #F0BB9F;  
+	width: 0px;
+	height: 0px;
+	position: fixed;
+	overflow: hidden;
+	left: 0px;
+	top: 0px;
+    bottom: 0px;
+	padding: 20px;
+	z-index: 999;
+	text-align: center;
+}
+
+.lb-overlay img{
+	max-height: 85%;
+
+	position: relative;
+}
+
+.lb-overlay:target {
+	width: auto;
+	height: auto;
+	right: 0px;
+}
+
+/* Transitions or Animations */
+/* Customize This */
+.lb-overlay:target img {
+	animation: fadeIn .5s;
+}
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+img {
+    width: 85%;
 }
